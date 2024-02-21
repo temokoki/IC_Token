@@ -1,0 +1,129 @@
+html {
+  background-color: rgb(30, 30, 50);
+  background-image: url(background.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  font-family: "Times";
+  font-size: 17pt;
+}
+
+fieldset {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 0px;
+  width: 40%;
+  min-width: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 8px -5px;
+}
+
+.panel {
+  background-color: rgb(48, 48, 48, 0.8);
+  border-radius: 14px;
+  margin: 30px auto;
+  padding: 5px 15px;
+  width: 80%;
+  max-width: 690px;
+  color: white;
+  outline: 3px solid whitesmoke;
+  box-shadow: 0 3px 0 3px #add2ff, 0 0.7em 3px 0em rgba(0, 0, 0, 0.5);
+  animation: fadein 1s ease-in;
+}
+
+.transferPanel {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 2px #617BFF solid;
+  color: white;
+  background-color: #617BFF;
+  padding: 15px;
+  transition: all 0.2s;
+  padding: 0.2em 0.5em;
+  transform: scale(1);
+}
+
+button:hover {
+  border: 2px #8095FF solid;
+  background-color: #8095FF;
+  transform: scale(1.1);
+}
+
+button:active {
+  border: 2px gray solid;
+  background-color: gray;
+  transform: scale(0.95);
+}
+
+button:disabled {
+  border: 2px rgba(255, 255, 255, 0.1) solid;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(0.95);
+}
+
+input {
+  text-align: center;
+  display: block;
+  margin: 0;
+  border-radius: 7px;
+  border: 2px white solid;
+  background-color: white;
+  padding: 10px 20px;
+  width: 100%;
+  color: #1E1C29;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  font-size: 12pt;
+}
+
+input:focus {
+  outline: none;
+  border: 2px #617BFF solid;
+}
+
+.principal-text {
+  color: rgb(50, 250, 50);
+  font-weight: 500;
+}
+
+.feedback-text {
+  color: yellow;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
